@@ -20,7 +20,7 @@ class Ball {
       push();
       translate(pos.x, pos.y);
       rotate(angle);
-      
+      imageMode(CENTER)
       fill("white");
       image(this.image,0, 0, this.width, this.height);
       pop();
