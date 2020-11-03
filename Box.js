@@ -3,6 +3,9 @@ class Box {
       var options = {
         'isStatic':true
       }
+      this.image=loadImage("dustbingreen.png")
+
+      
       this.body = Bodies.rectangle(x, y, width, height, options);
       this.width = width;
       this.height = height;
@@ -17,7 +20,7 @@ class Box {
       rotate(angle);
       rectMode(CENTER);
       fill("lightBlue");
-      rect(0, 0, this.width, this.height);
+      image(this.image,0, 0, this.width, this.height);
       pop();
     }
   };
